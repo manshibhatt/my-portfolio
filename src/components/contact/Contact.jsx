@@ -26,15 +26,15 @@ const Contact = () => {
 
   const isInView = useInView(ref, { margin: "-100px" });
 
-  const sendEmail = (e) => {
+  const sendEmail = (e) => { 
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_94y20xo",
-        "template_v10u2oh",
+        "service_k91fx24",
+        "template_bnwilxd",
         formRef.current,
-        "pX_2hasGmGcuvjXIW"
+        "7ui2-0OdlWYMrMVWW"
       )
       .then(
         (result) => {
@@ -58,15 +58,15 @@ const Contact = () => {
         <motion.h1 variants={variants}>Let’s work together</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
-          <span>hello@react.dev</span>
+          <span>bhattmanshi66@gmail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Address</h2>
-          <span>Hello street New York</span>
+          <span>Uttarakhand, India</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
-          <span>+1 234 5678</span>
+          <span>9634987242</span>
         </motion.div>
       </motion.div>
       <div className="formContainer">

@@ -11,8 +11,10 @@ html {
 }
 
 body {
-  background-color: #0c0c1d;
-  color: lightgray;
+  // background-color: #0c0c1d;
+  background-color: #88d5f3;
+  color: black;
+  // color: lightgray;
 }
 
 a {
@@ -38,7 +40,7 @@ section {
   }
 }
 @mixin desktop {
-  @media (max-width: 1366px) {
+  @media (max-width: 1550px) {
     @content;
   }
 }

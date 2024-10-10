@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import "./services.scss";
+import "./achievements.scss";
 import { motion, useInView } from "framer-motion";
 
 const variants = {
@@ -19,7 +19,7 @@ const variants = {
   },
 };
 
-const Services = () => {
+const Achievements = () => {
   const ref = useRef();
 
   const isInView = useInView(ref, { margin: "-100px" });
@@ -36,8 +36,8 @@ const Services = () => {
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
-          I focus on helping your brand grow
-          <br /> and move forward
+          I focus on 
+          <br /> growing
         </p>
         <hr />
       </motion.div>
@@ -45,14 +45,14 @@ const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="" />
           <h1>
-            <motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas
+            <motion.b whileHover={{color:"orange"}}>Hard</motion.b> Work
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b whileHover={{color:"orange"}}>For Your</motion.b> Business.
+            <motion.b whileHover={{color:"orange"}}>And Continuous</motion.b> Efforts.
           </h1>
-          <button>WHAT WE DO?</button>
+          {/* <button>WHAT I ACHIEVED?</button> */}
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
@@ -60,57 +60,50 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Leetcode</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            Solved 500+ problems on Leetcode
+                      Achieved Knight Badge awarded to top 25% participants 
           </p>
-          <button>Go</button>
+          {/* <button >Go</button> */}
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Code Gladiators</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            Made to the finals of TechGig Code Gladiator
           </p>
-          <button>Go</button>
+          {/* <button>Go</button> */}
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>HardWar 3.0</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            Participated in Hardwar hackathon and
+             developed a car parking system with Arduino 
+             and applied open cv for image detection
+             and integrated payment gateway
           </p>
-          <button>Go</button>
+          {/* <button>Go</button> */}
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Others</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            Secured 2nd position in college code competition
+            Secured 97.40 in Class 12th
           </p>
-          <button>Go</button>
+          {/* <button>Go</button> */}
         </motion.div>
       </motion.div>
     </motion.div>
   );
 };
 
-export default Services;
+export default Achievements;
